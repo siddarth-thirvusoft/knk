@@ -4,10 +4,13 @@
     <base target="_self">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNK Mattress | Sleep Better Tonight</title>
-    <meta name="description" content="Discover our premium quality mattresses for the perfect night's sleep. Natural materials, orthopedic support, and free delivery across India.">
+
+    <title>KNK Mattress | Premium Handmade Mattresses</title>
+    <meta name="description" content="KNK Mattress – Handmade kapok fiber mattresses since 1999. Natural, eco-friendly, orthopedic sleep solutions with free delivery across India.">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -24,438 +27,219 @@
             }
         }
     </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1920/1080?random=101');
+            background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+            url('https://picsum.photos/1920/1080?random=101');
         }
         .about-bg {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://picsum.photos/1920/1080?random=102');
+            background-image: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)),
+            url('https://picsum.photos/1920/1080?random=102');
         }
         .mattress-feature {
-            transition: all 0.3s ease;
+            transition: all .3s ease;
         }
         .mattress-feature:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.12);
         }
     </style>
 </head>
+
 <body class="font-sans text-gray-800">
-    <!-- Navigation -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-primary">
-                <span class="text-accent">Sleep</span>Well
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-primary">
+            <span class="text-accent">KNK</span> Mattress
+        </a>
+
+        <div class="hidden md:flex space-x-8">
+            <a href="#" class="font-medium hover:text-accent">Home</a>
+            <a href="#products" class="font-medium hover:text-accent">Products</a>
+            <a href="#about" class="font-medium hover:text-accent">About</a>
+            <a href="#contact" class="font-medium hover:text-accent">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <a
+                href="https://wa.me/918248824200?text=Hi%20KNK%20Mattress,%20I%20would%20like%20to%20place%20an%20order"
+                target="_blank"
+                class="p-2 text-green-500 hover:text-green-600"
+                aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp text-2xl"></i>
             </a>
-            
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="font-medium hover:text-accent">Home</a>
-                <a href="#products" class="font-medium hover:text-accent">Products</a>
-                <a href="#about" class="font-medium hover:text-accent">About Us</a>
-                <a href="#contact" class="font-medium hover:text-accent">Contact</a>
-            </div>
-            
-            <div class="flex items-center space-x-4">
-                <a 
-                    href="https://wa.me/918248824200"
-                    target="_blank"
-                    class="p-2 hover:text-accent text-green-500"
-                    aria-label="Chat on WhatsApp"
-                >
-                    <i class="fab fa-whatsapp text-2xl"></i>
-                </a>
 
-                <button class="md:hidden p-2" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
-            <a href="#" class="block py-2 hover:text-accent">Home</a>
-            <a href="#products" class="block py-2 hover:text-accent">Products</a>
-            <a href="#about" class="block py-2 hover:text-accent">About Us</a>
-            <a href="#contact" class="block py-2 hover:text-accent">Contact</a>
+            <button class="md:hidden p-2" id="menu-toggle">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-bg bg-cover bg-center text-white py-20 md:py-32">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Experience Perfect Sleep</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Premium quality mattresses crafted with natural materials for your best night's sleep</p>
-            <a href="#products" class="bg-accent hover:bg-yellow-500 text-primary font-bold py-3 px-8 rounded-full inline-block transition duration-300">Shop Now</a>
-        </div>
-    </section>
+    <div class="md:hidden hidden bg-white px-4 py-2 shadow-md" id="mobile-menu">
+        <a href="#" class="block py-2 hover:text-accent">Home</a>
+        <a href="#products" class="block py-2 hover:text-accent">Products</a>
+        <a href="#about" class="block py-2 hover:text-accent">About</a>
+        <a href="#contact" class="block py-2 hover:text-accent">Contact</a>
+    </div>
+</header>
 
-    <!-- Featured Products -->
-    <section id="products" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Premium Mattress Collection</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md mattress-feature">
-                    <img src="https://picsum.photos/600/400?random=201" alt="Orthopedic Memory Foam Mattress" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Orthopedic Memory Foam</h3>
-                        <p class="text-gray-600 mb-4">Advanced pressure relief with cooling gel technology</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-primary">₹12,999</span>
-                            <button class="bg-primary hover:bg-secondary text-white py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
-                        </div>
-                    </div>
+<!-- ================= HERO ================= -->
+<section class="hero-bg bg-cover bg-center text-white py-24">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Handmade Comfort Since 1999
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+            Natural kapok fiber mattresses crafted for healthy and restful sleep
+        </p>
+        <a href="#products"
+           class="bg-accent hover:bg-yellow-500 text-primary font-bold py-3 px-8 rounded-full transition">
+            View Products
+        </a>
+    </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Mattress Collection</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md mattress-feature">
+                <img src="https://picsum.photos/600/400?random=201" class="w-full h-64 object-cover" alt="">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Orthopedic Mattress</h3>
+                    <p class="text-gray-600 mb-4">Back-supporting handmade mattress</p>
+                    <span class="text-2xl font-bold text-primary">₹15,499</span>
                 </div>
-                
-                <!-- Product 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md mattress-feature">
-                    <img src="https://picsum.photos/600/400?random=202" alt="Natural Latex Mattress" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Natural Latex</h3>
-                        <p class="text-gray-600 mb-4">100% organic latex for hypoallergenic comfort</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-primary">₹18,999</span>
-                            <button class="bg-primary hover:bg-secondary text-white py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md mattress-feature">
+                <img src="https://picsum.photos/600/400?random=202" class="w-full h-64 object-cover" alt="">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Kapok Fiber Mattress</h3>
+                    <p class="text-gray-600 mb-4">100% natural breathable filling</p>
+                    <span class="text-2xl font-bold text-primary">₹18,999</span>
                 </div>
-                
-                <!-- Product 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md mattress-feature">
-                    <img src="https://picsum.photos/600/400?random=203" alt="Pocket Spring Mattress" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Pocket Spring</h3>
-                        <p class="text-gray-600 mb-4">Individual spring system for optimal support</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-2xl font-bold text-primary">₹15,499</span>
-                            <button class="bg-primary hover:bg-secondary text-white py-2 px-4 rounded-full transition duration-300">Add to Cart</button>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md mattress-feature">
+                <img src="https://picsum.photos/600/400?random=203" class="w-full h-64 object-cover" alt="">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Custom Size Mattress</h3>
+                    <p class="text-gray-600 mb-4">Made to your exact size</p>
+                    <span class="text-2xl font-bold text-primary">Custom Price</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-bg bg-cover bg-center py-16">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-white bg-opacity-90 rounded-xl shadow-lg overflow-hidden">
-                <div class="md:flex">
-                    <div class="md:w-1/2">
-                        <img src="https://picsum.photos/600/400?random=301" alt="Our Story" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="md:w-1/2 p-8">
-                    <h2 class="text-3xl font-bold mb-6 text-primary">About KNK Mattress</h2>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-bg py-16">
+    <div class="container mx-auto px-4 max-w-4xl bg-white rounded-xl shadow-lg p-8">
+        <h2 class="text-3xl font-bold mb-6 text-primary">About KNK Mattress</h2>
 
-                    <p class="mb-4">
-                    Founded in 1999, KNK Mattress is a trusted name in handcrafted mattress manufacturing, proudly rooted in tradition and quality.
-                    </p>
+        <p class="mb-4">
+            Founded in 1999, KNK Mattress is a family-run business specializing in
+            handmade mattresses using natural kapok fiber.
+        </p>
 
-                    <p class="mb-4">
-                    We specialize in handmade mattresses crafted from natural kapok fiber, known for its breathability, resilience, and eco-friendly properties. Each mattress is carefully made by skilled artisans to ensure lasting comfort and durability.
-                    </p>
+        <p class="mb-4">
+            Every mattress is crafted by skilled artisans ensuring durability,
+            breathability, and orthopedic comfort.
+        </p>
 
-                    <p class="mb-6">
-                    Our mission is to deliver naturally comfortable, sustainable, and long-lasting sleep solutions while preserving the craftsmanship that defines our heritage.
-                    </p>
-                        
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div class="flex items-center">
-                                <div class="bg-accent rounded-full p-2 mr-3">
-                                    <i class="fas fa-leaf text-white"></i>
-                                </div>
-                                <span>Eco-Friendly</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="bg-accent rounded-full p-2 mr-3">
-                                    <i class="fas fa-medal text-white"></i>
-                                </div>
-                                <span>Premium Quality</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="bg-accent rounded-full p-2 mr-3">
-                                    <i class="fas fa-truck text-white"></i>
-                                </div>
-                                <span>Free Delivery</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="bg-accent rounded-full p-2 mr-3">
-                                    <i class="fas fa-shield-alt text-white"></i>
-                                </div>
-                                <span>10-Year Warranty</span>
-                            </div>
-                        </div>
-                        
-                        <a href="#contact" class="inline-block bg-primary hover:bg-secondary text-white font-bold py-2 px-6 rounded-full transition duration-300">Contact Us</a>
-                    </div>
-                </div>
+        <p class="mb-6">
+            Our goal is to preserve traditional craftsmanship while delivering
+            modern sleep comfort.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-3xl font-bold text-center mb-10">Place Your Order</h2>
+
+        <form id="orderForm" class="bg-white bg-opacity-10 p-8 rounded-xl">
+            <div class="grid md:grid-cols-2 gap-4">
+                <input id="name" required placeholder="Name"
+                    class="px-4 py-3 rounded-lg bg-white bg-opacity-20 w-full">
+                <input id="email" type="email" required placeholder="Email"
+                    class="px-4 py-3 rounded-lg bg-white bg-opacity-20 w-full">
+                <input id="length" type="number" required placeholder="Length (inches)"
+                    class="px-4 py-3 rounded-lg bg-white bg-opacity-20 w-full">
+                <input id="width" type="number" required placeholder="Width (inches)"
+                    class="px-4 py-3 rounded-lg bg-white bg-opacity-20 w-full">
             </div>
-        </div>
-    </section>
 
-    <!-- Testimonials -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span class="text-gray-600">5.0</span>
-                    </div>
-                    <p class="mb-4 italic">"The orthopedic mattress completely eliminated my back pain. Best sleep I've had in years!"</p>
-                    <div class="flex items-center">
-                        <img src="https://picsum.photos/100?random=401" alt="Rahul Sharma" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <h4 class="font-bold">Rahul Sharma</h4>
-                            <p class="text-sm text-gray-600">Mumbai</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span class="text-gray-600">5.0</span>
-                    </div>
-                    <p class="mb-4 italic">"Excellent customer service and the natural latex mattress is worth every rupee. No more allergies!"</p>
-                    <div class="flex items-center">
-                        <img src="https://picsum.photos/100?random=402" alt="Priya Patel" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <h4 class="font-bold">Priya Patel</h4>
-                            <p class="text-sm text-gray-600">Bangalore</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span class="text-gray-600">4.5</span>
-                    </div>
-                    <p class="mb-4 italic">"The pocket spring mattress provides perfect support. Delivery was quick and setup was easy."</p>
-                    <div class="flex items-center">
-                        <img src="https://picsum.photos/100?random=403" alt="Anil Kumar" class="w-10 h-10 rounded-full mr-3">
-                        <div>
-                            <h4 class="font-bold">Anil Kumar</h4>
-                            <p class="text-sm text-gray-600">Delhi</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <button id="submitBtn"
+                class="w-full mt-6 bg-accent hover:bg-yellow-500 text-primary font-bold py-3 rounded-lg">
+                Submit Order
+            </button>
+        </form>
+    </div>
+</section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Contact KNK Mattress</h2>
-            
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Contact Form -->
-                <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
-                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
-                    <form>
-                        <div class="mb-4">
-                            <label for="name" class="block mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent placeholder-white placeholder-opacity-70" placeholder="Enter your name">
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent placeholder-white placeholder-opacity-70" placeholder="Enter your email">
-                        </div>
-                        <div class="mb-4">
-                            <label for="phone" class="block mb-2">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent placeholder-white placeholder-opacity-70" placeholder="Enter your phone">
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" class="block mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent placeholder-white placeholder-opacity-70" placeholder="How can we help you?"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-accent hover:bg-yellow-500 text-primary font-bold py-3 px-4 rounded-lg transition duration-300">Send Message</button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Our Information</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="bg-accent rounded-full p-3 mr-4">
-                                <i class="fas fa-map-marker-alt text-primary"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Head Office</h4>
-                                <p>#1, Kolathupalayam, Kagam(PO), Sivagiri(via)<br>Erode - 638109, Tamil Nadu, India</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-accent rounded-full p-3 mr-4">
-                                <i class="fas fa-phone-alt text-primary"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Call Us</h4>
-                                <p>+91 98421 22744<br>+91 82488 24200</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-accent rounded-full p-3 mr-4">
-                                <i class="fas fa-envelope text-primary"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Email Us</h4>
-                                <p>knkbeds12@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-accent rounded-full p-3 mr-4">
-                                <i class="fas fa-clock text-primary"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold mb-1">Working Hours</h4>
-                                <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-8">
-                        <h4 class="font-bold mb-4">Follow Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white py-8 text-center">
+    <p class="text-gray-400">
+        © <span id="year"></span> KNK Mattress. All Rights Reserved.
+    </p>
+</footer>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">KNK Mattress</h3>
-                    <p class="mb-4">Premium mattresses for perfect sleep. Crafted with care in India.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Products</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Memory Foam</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Latex Mattress</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Pocket Spring</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Orthopedic</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Newsletter</h4>
-                    <p class="mb-4 text-gray-400">Subscribe for updates and offers</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent w-full">
-                        <button type="submit" class="bg-accent hover:bg-yellow-500 text-primary font-bold px-4 py-2 rounded-r-lg transition duration-300">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 SleepWell Mattresses. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+<!-- ================= JS ================= -->
+<script>
+/* Mobile Menu */
+document.getElementById("menu-toggle").onclick = () => {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+};
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
-            const menuToggle = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            menuToggle.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                        
-                        // Close mobile menu if open
-                        if(!mobileMenu.classList.contains('hidden')) {
-                            mobileMenu.classList.add('hidden');
-                        }
-                    }
-                });
-            });
-            
-            // Form submission
-            const contactForm = document.querySelector('#contact form');
-            if(contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your message! We will contact you soon.');
-                    this.reset();
-                });
-            }
+/* Footer Year */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Order Form */
+document.getElementById("orderForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+    btn.textContent = "Submitting...";
+
+    const payload = {
+        name: name.value,
+        email: email.value,
+        length: length.value,
+        width: width.value,
+        order_time: new Date().toISOString()
+    };
+
+    try {
+        const res = await fetch("https://YOUR_API_GATEWAY_URL", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
         });
-    </script>
+
+        if (res.ok) {
+            alert("Order submitted successfully!");
+            e.target.reset();
+        } else {
+            alert("Submission failed");
+        }
+    } catch {
+        alert("Network error");
+    }
+
+    btn.disabled = false;
+    btn.textContent = "Submit Order";
+});
+</script>
+
 </body>
 </html>
